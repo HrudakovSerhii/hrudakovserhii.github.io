@@ -1,0 +1,102 @@
+/*Selector names chosen using BEM methodology: block--modifier-value */
+
+@font-face {
+    font-family: "Open Sans";
+    src: local('Open Sans'), local('OpenSans'), url(http://allfont.de/cache/fonts/open-sans_5f14bd2f3cd41e7b13ff8bc4177c9d06.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://allfont.ru/cache/fonts/open-sans-bold_5231939d0cda13eb1fd5685f7264eb76.woff) format('woff');
+    font-weight: 700;
+}
+
+#emails-input {
+    position: relative;
+    width: 440px;
+    height: 96px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.emails-list {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: white;
+    border: 1px solid #C3C2CF;
+    border-radius: 4px;
+    padding: 4px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.email--item {
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.email--item span {
+    line-height: 24px;
+}
+
+.email--item .button--emailItem-remove {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.email--item-valid {
+    position: relative;
+    background-color: rgba(102, 153, 255, 0.2);;
+    border: rgba(102, 153, 255, 0.2) solid 1px;
+    border-radius: 100px;
+    padding: 0 16px 0 8px;
+}
+
+.email--item-valid span {
+    padding-right: 4px;
+}
+
+.email--item-invalid {
+    background-color: white;
+    border: none;
+    border-bottom: 1px dashed red;
+    border-radius: unset;
+    margin: 0 4px 0 8px;
+    padding: 0 8px 0 0;
+}
+
+.email--item-new {
+    padding: 0 4px;
+}
+
+.email--item-new input {
+    border: none;
+    color: #C3C2CF;
+    line-height: 24px;
+}
+
+.email-input--item-new:focus {
+    outline: none;
+    box-sizing: border-box;
+}
+
+.button--email-item-remove {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+.button--email-item-remove svg {
+    pointer-events: none;
+}
+
+.button--email-item-remove:focus {
+    outline: none;
+}
